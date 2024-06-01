@@ -1,23 +1,13 @@
 import '../styles/HomeScreen.css';
 import Navbar from '../components/Navbar';
+import Banner from '../components/Banner';
 function HomeScreen() {
     return (
         <div className="homeScreen">
             <Navbar />
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
 
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
-            <h1>test</h1>
+            <Banner />
+
         </div>
     )
 }
