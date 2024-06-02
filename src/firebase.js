@@ -1,8 +1,8 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyAB9xMUOitWFcXxfuMjjwCI7UtCrv5bqgo",
-    authDomain: "netflix-clone-build-dbdf3.firebaseapp.com",
-    projectId: "netflix-clone-build-dbdf3",
-    storageBucket: "netflix-clone-build-dbdf3.appspot.com",
-    messagingSenderId: "674070350615",
-    appId: "1:674070350615:web:65afd1918eddc80cee4552"
+    apiKey: "AIzaSyD9Trk_EYXpVA2U3eeM_z2pdeiLKJFfsmo",
+    authDomain: "my-movie-app-fc746.firebaseapp.com",
+    projectId: "my-movie-app-fc746",
+    storageBucket: "my-movie-app-fc746.appspot.com",
+    messagingSenderId: "668471268844",
+    appId: "1:668471268844:web:2769f5898b2a6f1d0c9cc9"
 };

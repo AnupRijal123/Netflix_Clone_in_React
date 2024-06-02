@@ -23,10 +23,15 @@
 .nav_logo {
     position: fixed;
     left: 20px;
-    top: 5px;
-    width: 80px;
+    top: 25px;
     cursor: pointer;
+    background-color: transparent;
 }
+
+.nav_logo h3 {
+    color: #E50914;
+}
+
 
 .nav_avatar {
     position: fixed;
