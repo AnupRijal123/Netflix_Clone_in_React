@@ -1,11 +1,9 @@
 .profileScreen {
-    background-color: red;
     height: 100vh;
     color: #fff;
 }
 
 .profileScreen_body {
-    background-color: pink;
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -22,7 +20,6 @@
 }
 
 .profileScreen_info {
-    background-color: yellow;
     display: flex;
     gap: 25px;
 }
@@ -32,7 +29,6 @@
 }
 
 .profileScreen_details {
-    background-color: blue;
     flex: 1;
 }
 
@@ -43,7 +39,6 @@
 }
 
 .profileScreen_plan {
-    background-color: green;
     padding-top: 20px;
 }
 

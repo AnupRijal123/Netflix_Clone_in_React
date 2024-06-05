@@ -3,7 +3,6 @@ import { useState } from 'react';
 import SignUpScreen from '../components/SignUpScreen';
 function LoginScreen() {
     const [signInClicked, setSignInClicked] = useState(false);
-    console.log(signInClicked)
     return (
         <div className="loginScreen">
             <div className="loginScreen_background">

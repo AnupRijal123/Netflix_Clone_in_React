@@ -1,17 +1,19 @@
 import '../styles/SignUpScreen.css';
 import { useRef } from 'react';
 import { auth } from '../firebase';
+import { useNavigate } from 'react-router-dom';
 
 function SignUpScreen() {
     const emailRef = useRef(null);
     const passwordRef = useRef(null);
+    const navigate = useNavigate();
     const register = (e) => {
         e.preventDefault();
         auth.createUserWithEmailAndPassword(
             emailRef.current.value,
             passwordRef.current.value
-        ).then((response) => {
-            console.log(response);
+        ).then(() => {
+            navigate('/');
         }).catch(error => {
             alert(error.message);
         });
@@ -21,8 +23,8 @@ function SignUpScreen() {
         auth.signInWithEmailAndPassword(
             emailRef.current.value,
             passwordRef.current.value
-        ).then((response) => {
-            console.log(response);
+        ).then(() => {
+            navigate('/');
         }).catch((error) => {
             alert(error.message);
         });
