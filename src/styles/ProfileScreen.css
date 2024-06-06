@@ -21,7 +21,7 @@
 
 .profileScreen_info {
     display: flex;
-    gap: 25px;
+    gap: 10%;
 }
 
 .profileScreen_info img {
@@ -57,4 +57,24 @@
     border: none;
     font-weight: 600;
     cursor: pointer;
+}
+
+@media only screen and (max-width:720px) {
+    .profileScreen_info {
+        flex-direction: column;
+    }
+
+    .profileScreen_info img {
+        object-fit: contain;
+    }
+
+    .profileScreen {
+        height: 100%;
+    }
+
+    .profileScreen_details {
+        padding-top: 10px;
+    }
+
+
 }
