@@ -5,6 +5,7 @@ import Row from '../components/Row';
 import requests from '../api/Request';
 import Youtube from 'react-youtube';
 import { useEffect, useState } from 'react';
+import Footer from '../components/Footer';
 function HomeScreen() {
     const [trailerKey, setTrailerKey] = useState('');
     const opts = {
@@ -51,6 +52,7 @@ function HomeScreen() {
             <Row title="Romantic Movies" fetchUrl={requests.fetchRomanticMovies} getTrailer={getTrailerKey} />
             <Row title="Documentries" fetchUrl={requests.fetchDocumentaries} getTrailer={getTrailerKey} />
 
+            <Footer />
 
         </div>
     )

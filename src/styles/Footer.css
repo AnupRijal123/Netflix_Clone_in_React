@@ -1,0 +1,29 @@
+.footer {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer img {
+    height: 40px;
+    object-fit: contain;
+}
+
+.footer_content {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer_content a {
+    text-decoration: none;
+}
+
+.footer_content h3 {
+    color: #fff;
+}
+
+.footer_content h3:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
