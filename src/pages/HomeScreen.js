@@ -4,7 +4,7 @@ import Banner from '../components/Banner';
 import Row from '../components/Row';
 import requests from '../api/Request';
 import Youtube from 'react-youtube';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Footer from '../components/Footer';
 function HomeScreen() {
     const [trailerKey, setTrailerKey] = useState('');
