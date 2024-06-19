@@ -18,7 +18,6 @@ function HomeScreen() {
 
 
     const getTrailerKey = function (key) {
-        console.log(key)
         if (trailerKey) {
             setTrailerKey('');
         } else {
@@ -26,10 +25,6 @@ function HomeScreen() {
         }
     }
 
-    useEffect(() => {
-        console.log('changed')
-
-    }, [trailerKey]);
     return (
         <div className="homeScreen">
             <Navbar />
