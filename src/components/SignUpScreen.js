@@ -30,6 +30,18 @@ function SignUpScreen() {
             alert(error.message);
         });
     }
+
+    const makeDemoSignIn = () => {
+        auth.signInWithEmailAndPassword(
+            'demo@email.com',
+            'demo123'
+        ).then(() => {
+            navigate('/');
+        }).catch((error) => {
+            alert(error.message);
+        });
+    }
+
     return (
         <div className="signup-screen">
             <form >
@@ -53,6 +65,7 @@ function SignUpScreen() {
                     <span className="gray-text">Already have an account? </span>
                     <span className="signup_link" onClick={() => setIsCreateNew(false)}>Sign in</span>
                 </h4>}
+                <h4 className="signup_link" onClick={makeDemoSignIn}>Continue without signing in</h4>
             </form>
 
         </div>

@@ -1,8 +1,22 @@
 import '../styles/LoginScreen.css';
 import { useState } from 'react';
 import SignUpScreen from '../components/SignUpScreen';
+import { useNavigate } from 'react-router-dom';
+import { auth } from '../firebase.js';
 function LoginScreen() {
     const [signInClicked, setSignInClicked] = useState(false);
+    const navigate = useNavigate();
+    const makeDemoSignIn = () => {
+        auth.signInWithEmailAndPassword(
+            'demo@email.com',
+            'demo123'
+        ).then(() => {
+            navigate('/');
+        }).catch((error) => {
+            alert(error.message);
+        });
+
+    }
     return (
         <div className="loginScreen">
             <div className="loginScreen_background">
@@ -25,19 +39,7 @@ function LoginScreen() {
                 ) : (
                     <>
                         <h1>Unlimited films,TV programs and more.</h1>
-                        <h2>Watch anywhere.Cancel at any time.</h2>
-                        <h3>Ready to watch?Enter your email to create or restart your membership</h3>
-                        <div className="loginScreen_input">
-                            <input
-                                type="email"
-                                placeholder="Email Address"
-                            />
-                            <button
-                                onClick={() => {
-                                    setSignInClicked(true);
-                                }}
-                                className="getStarted_button">Get Started</button>
-                        </div>
+                        <h2 onClick={makeDemoSignIn}>Continue without logging in </h2>
                     </>
 
                 )}
